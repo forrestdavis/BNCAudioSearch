@@ -80,6 +80,8 @@ python clip command: Script command to get wav and TextGrid for just utterance o
 python padded clip command: Like above but with paddding
 ```
 
+You can download a smalller precompiled excel version (only utterances with more than 3 words) from Google Drive [here](https://docs.google.com/spreadsheets/d/19D7f3QQ9fAInnzMtf_sQA2fraPWC72dY/edit?usp=sharing&ouid=109651103446022413279&rtpof=true&sd=true).
+
 So for example, say you want to find the word gronnies, as per BNC's website:
 
 1. Open BNCAudio\_utterances.tsv
