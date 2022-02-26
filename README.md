@@ -121,6 +121,21 @@ Now open the wav and TextGrid files under downloads in Praat. You should see:
 
 ![handyman](figures/handyman.png)
 
+## 5. Get measurements
+
+Suppose you have downloaded some wav files and aligned TextGrids (as in 3 and 4). You
+can get some measurements using Praat. Namely: 
+
+1. Open Praat
+2. Click Praat in the upper left of the Praat Objects window
+3. Click Open Praat script...
+4. open getMeasures.praat
+5. Click Run
+6. This will save duration, F0, F1, F2, and intensity measures
+
+Note, you will want to tweak the parameters if you are doing careful analysis. This script
+is provided for some exploratory work, so take caution with the results.  
+
 ## Notes
 - There are some outstanding alignment issues and some issues with loading a small subset 
         of the textgrids (see alignment_issues.txt and errorful_textgrids.txt for 
