@@ -87,7 +87,7 @@ So for example, say you want to find the word gronnies, as per BNC's website:
 1. Open BNCAudio\_utterances.tsv
 2. Navigate to utterance text column
 3. Search for gronnies
-4. copy the cell under the link column and paste in browswer (this will download the 
+4. copy the cell under the link column and paste in browser (this will download the 
 wav file)
 
 Alernatively, if you'd like the wav and TextGrid aligned for the utterance containing 
