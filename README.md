@@ -131,9 +131,10 @@ can get some measurements using Praat. Namely:
 3. Click Open Praat script...
 4. open getMeasures.praat
 5. Click Run
-6. This will save duration, F0, F1, F2, and intensity measures
+6. The script will iterate over all wav files with corresponding TextGrid files in downloads
+6. It will save duration, F0, F1, F2, and intensity measures 
 
-Note, you will want to tweak the parameters if you are doing careful analysis. This script
+NOTE, you will want to tweak the parameters if you are doing careful analysis. This script
 is provided for some exploratory work, so take caution with the results.  
 
 ## Notes
