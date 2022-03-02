@@ -56,7 +56,7 @@ transcripts and transcriptions. This will then save a tsv file (BNCAudio\_uttera
 
 Searching with Praat given the alignments is not familiar to me; see [BNC demo](http://www.phon.ox.ac.uk/jcoleman/PraatSearch.html)
 
-Instead, align.py creates a tsv file which can faciliate searching. It is grouped at the utterance level, so each row is an utterance. The headings and their meanings are below:
+Instead, align.py creates a tsv file which can facilitate searching. It is grouped at the utterance level, so each row is an utterance. The headings and their meanings are below:
 
 ```
 tape: name of tape
@@ -67,7 +67,7 @@ tape utterance num: utterance number in tape (e.g., 5th utterance)
 speaker utterance num: utterance number for speaker in turn (e.g., 2nd uninterrupted utterance)
 transcript num: transcript number utterance is from
 utterance text: utterance in orthography with any punctuation
-cleaned text: utterance in orthography without any puncutation
+cleaned text: utterance in orthography without any punctuation
 phones: phones in utterance or word, words boundary is marked with |
 start time: start time in audio of utterance or word
 end time: end time in audio of utterance or word 
@@ -80,7 +80,8 @@ python clip command: Script command to get wav and TextGrid for just utterance o
 python padded clip command: Like above but with paddding
 ```
 
-You can download a smalller precompiled excel version (only utterances with more than 3 words) from Google Drive [here](https://docs.google.com/spreadsheets/d/19D7f3QQ9fAInnzMtf_sQA2fraPWC72dY/edit?usp=sharing&ouid=109651103446022413279&rtpof=true&sd=true).
+You can download a smaller precompiled excel version (only utterances with more than 3 words) from Google Drive [here](https://docs.google.com/spreadsheets/d/19D7f3QQ9fAInnzMtf_sQA2fraPWC72dY/edit?usp=sharing&ouid=109651103446022413279&rtpof=true&sd=true). Additionally, an even smaller version containing the first 10,000 utterances (with more than 3 words) that can be viewed in Google Sheets 
+is [here](https://docs.google.com/spreadsheets/d/1fKnhHqLaJGk7nUfN0mZ9xoUpS0hHVdCDDf6KvsIjRG8/edit?usp=sharing).
 
 So for example, say you want to find the word gronnies, as per BNC's website:
 
@@ -90,7 +91,7 @@ So for example, say you want to find the word gronnies, as per BNC's website:
 4. copy the cell under the link column and paste in browser (this will download the 
 wav file)
 
-Alernatively, if you'd like the wav and TextGrid aligned for the utterance containing 
+Alternatively, if you'd like the wav and TextGrid aligned for the utterance containing 
 gronnies, after 3 above
 
 1. Copy the cell under the 'python clip command' column. 
