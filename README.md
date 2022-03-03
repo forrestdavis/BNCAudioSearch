@@ -68,15 +68,16 @@ speaker utterance num: utterance number for speaker in turn (e.g., 2nd uninterru
 transcript num: transcript number utterance is from
 utterance text: utterance in orthography with any punctuation
 cleaned text: utterance in orthography without any punctuation
-phones: phones in utterance or word, words boundary is marked with |
-start time: start time in audio of utterance or word
-end time: end time in audio of utterance or word 
+phones: phones in utterance, word boundary is marked with |
+start time: start time in audio of utterance
+end time: end time in audio of utterance
 wav fname: wav filename
-TextGrid fname: TextGrid file name
+TextGrid fname: TextGrid file name (which aligns with subpart of wav file from link)
 transcript html: HTML link of orthographic transcript
-link: Link for downloading word or utterance
-padded link: Link for downloading word or utterance with 30 second buffer on either side
-python clip command: Script command to get wav and TextGrid for just utterance or word
+link: Link for downloading full wav file that contains this utterance (and others)
+clip link: Link for downloading the wav file of this specific utterance
+padded clip link: Link for downloading this utterance with 30 second buffer on either side
+python clip command: Script command to get wav and TextGrid for just this utterance
 python padded clip command: Like above but with paddding
 ```
 
@@ -133,8 +134,9 @@ can get some measurements using Praat. Namely:
 4. open getMeasures.praat
 5. Click Run
 6. The script will iterate over all wav files with corresponding TextGrid files in downloads
-6. It will save duration, F0, F1, F2, and intensity measures 
+7. It will save duration, F0, F1, F2, and intensity measures 
 
+For the above to work, make sure wav files and their TextGrids have the same file names (minus the extension). So a wav file AA.wav needs a TextGrid AA.TextGrid. You can change the path to the wav/TextGrid files by interacting with the pop up window from the praat script (the default is under data/downloads).
 NOTE, you will want to tweak the parameters if you are doing careful analysis. This script
 is provided for some exploratory work, so take caution with the results.  
 

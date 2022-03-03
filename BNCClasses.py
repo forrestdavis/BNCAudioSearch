@@ -121,7 +121,8 @@ class Utterance:
         #Some phonemes are lower case?? ae2 in D90_1.TextGrid
         phones_str = '| '+self.phones.strip().upper()
 
-        link = self.wavlink+'?t='+str(self.start)+','+str(self.end)
+        link = self.wavlink
+        clip_link = self.wavlink+'?t='+str(self.start)+','+str(self.end)
         padded_link = self.wavlink+'?t='+str(max(self.start-padding, 0))+','+str(self.end+padding)
         UID = self.textgridfname.split('.TextGrid')[0]+'_'+str(self.start)+'_'+str(self.end)
 
@@ -142,7 +143,8 @@ class Utterance:
                 'TextGrid fname': self.textgridfname,
                 'tanscript html': self.transcriptlink,
                 'link': link, 
-                'padded link': padded_link, 
+                'clip link': clip_link,
+                'padded clip link': padded_link, 
                 'python clip command': command, 
                 'python padded clip command': pad_command}
 
